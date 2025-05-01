@@ -87,7 +87,12 @@ const Hero = () => {
         </div>
       </div>
       {/* Optionally, add controls for 3D rotation/movement */}
-     
+      <div style={{position:'fixed',right:18,bottom:18,zIndex:20,pointerEvents:'none'}}>
+        <div style={{background:'rgba(30,0,40,0.85)',border:'2px solid #39FF14',boxShadow:'0 0 16px #39FF14',borderRadius:'2rem',padding:'0.5rem 1.5rem',display:'flex',alignItems:'center',gap:'0.5rem',fontFamily:'Orbitron, Space Grotesk, Inter, sans-serif',color:'#39FF14',fontWeight:700,fontSize:'1.1rem',letterSpacing:'0.04em',pointerEvents:'auto'}}>
+          <span style={{display:'inline-block',width:12,height:12,borderRadius:'50%',background:'#39FF14',marginRight:8,boxShadow:'0 0 8px #39FF14'}}></span>
+          Neon Mode
+        </div>
+      </div>
     </section>
   );
 };

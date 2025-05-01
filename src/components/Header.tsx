@@ -40,10 +40,16 @@ const Header = ({ activeSection }: HeaderProps) => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a
           href="#hero"
-          className="text-2xl font-extrabold tracking-widest text-green-500 dark:text-green-400 flex items-center neon-text drop-shadow-lg"
-          style={{ fontFamily: 'Orbitron, Space Grotesk, Inter, sans-serif', letterSpacing: '0.1em' }}
+          className="text-2xl font-extrabold tracking-widest flex items-center neon-text drop-shadow-lg"
+          style={{ color: '#39FF14', fontFamily: 'Orbitron, Space Grotesk, Inter, sans-serif', letterSpacing: '0.1em', textShadow: '0 0 16px #39FF14, 0 0 32px #39FF14' }}
         >
-          Ragu
+          <span style={{marginRight:8,display:'flex',alignItems:'center'}}>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginRight:6}}>
+              <circle cx="12" cy="12" r="10" stroke="#39FF14" strokeWidth="3" fill="none" filter="drop-shadow(0 0 8px #39FF14)"/>
+              <path d="M12 7v5l3 3" stroke="#39FF14" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            RaguCreates
+          </span>
         </a>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8 bg-black/30 px-6 py-2 rounded-full shadow-lg border border-pink-400/30">
@@ -57,8 +63,9 @@ const Header = ({ activeSection }: HeaderProps) => {
                     ? 'bg-gradient-to-r from-green-500 to-green-300 text-white shadow-lg scale-105'
                     : 'text-gray-200 hover:bg-green-500/30 hover:text-green-200'
                 }`}
-                style={{ fontFamily: 'Orbitron, Space Grotesk, Inter, sans-serif' }}
+                style={{ fontFamily: 'Orbitron, Space Grotesk, Inter, sans-serif', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
               >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8" stroke="#39FF14" strokeWidth="2.5" fill="none"/><path d="M12 8v4l2 2" stroke="#39FF14" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 {link.name}
               </Link>
             ) : (
@@ -70,7 +77,7 @@ const Header = ({ activeSection }: HeaderProps) => {
                     ? 'bg-gradient-to-r from-green-500 to-green-300 text-white shadow-lg scale-105'
                     : 'text-gray-200 hover:bg-green-500/30 hover:text-green-200'
                 }`}
-                style={{ fontFamily: 'Orbitron, Space Grotesk, Inter, sans-serif', cursor: 'pointer' }}
+                style={{ fontFamily: 'Orbitron, Space Grotesk, Inter, sans-serif', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
                 onClick={e => {
                   e.preventDefault();
                   const section = document.querySelector(link.href);
@@ -79,6 +86,7 @@ const Header = ({ activeSection }: HeaderProps) => {
                   }
                 }}
               >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8" stroke="#39FF14" strokeWidth="2.5" fill="none"/><path d="M12 8v4l2 2" stroke="#39FF14" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 {link.name}
               </a>
             )
