@@ -12,7 +12,7 @@ const Footer = () => (
         Let's Turn your Ideas<br />into Reality
       </h2>
       <a href="mailto:hello@wilsonbrock.com" className="text-2xl md:text-3xl font-semibold text-white border-b-2 border-white hover:text-lime-400 hover:border-lime-400 transition-colors flex items-center gap-2 mb-6">
-        <span className="text-2xl">↳</span> hello@wilsonbrock.com
+        <span className="text-2xl">↳</span> ragunandhan48@gmail.com
       </a>
     </div>
     <nav className="mt-10 flex gap-8 text-white text-base">

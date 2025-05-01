@@ -5,10 +5,10 @@ import { useTheme } from '../contexts/ThemeContext';
 import Spline from '@splinetool/react-spline';
 
 const roles = [
-  'Web Developer',
+  'Business Analyst',
   'Mobile App Developer',
   'Full Stack Engineer',
-  'UI/UX Enthusiast'
+  'UI/UX Designer'
 ];
 
 const Hero = () => {
@@ -74,7 +74,7 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl font-extrabold mb-4 drop-shadow-lg animate-float-medium" style={{ color: '#FF2C55', fontFamily: 'Orbitron, Space Grotesk, Inter, sans-serif', textShadow: '0 0 40px #FF2C55, 0 0 80px #FF2C55' }}>
           Hi, I'm Ragu
         </h1>
-        <h2 className="text-2xl md:text-4xl font-bold mb-8" style={{ color: '#FFD700', fontFamily: 'Orbitron, Space Grotesk, Inter, sans-serif', textShadow: '0 0 30px #FFD700, 0 0 60px #FFD700' }}>
+        <h2 className="text-2xl md:text-4xl font-bold mb-8" style={{ color: '#00FFF7', fontFamily: 'Orbitron, Space Grotesk, Inter, sans-serif', textShadow: '0 0 30px #00FFF7, 0 0 60px #00FFF7' }}>
           <span>{displayText}&nbsp;</span>
           <span className="blinking-cursor">|</span>
         </h2>
@@ -83,14 +83,11 @@ const Hero = () => {
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Button href="#projects" className="neon-box" style={{ background: '#FF2C55', color: '#fff', boxShadow: '0 0 10px #FF2C55, 0 0 30px #FF2C55' }}>See My Work</Button>
-          <Button href="#contact" className="neon-box" style={{ background: '#FFD700', color: '#222', boxShadow: '0 0 10px #FFD700, 0 0 30px #FFD700' }}>Contact Me</Button>
+          <Button href="/contact" className="neon-box" style={{ background: '#39FF14', color: '#222', boxShadow: '0 0 10px #39FF14, 0 0 30px #39FF14' }}>Contact Me</Button>
         </div>
       </div>
       {/* Optionally, add controls for 3D rotation/movement */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-4 bg-black/50 rounded-full px-6 py-2 neon-box shadow-lg">
-        <span className="text-neon-green font-bold">Tip:</span>
-        <span className="text-white">Drag to rotate Spiderman • Scroll to zoom</span>
-      </div>
+     
     </section>
   );
 };
